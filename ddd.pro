@@ -11,13 +11,18 @@ QMAKE_CXXFLAGS+= -fopenmp
 QMAKE_LFLAGS +=  -fopenmp
 SOURCES += \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    tablewindow.cpp \
+    tmessage.cpp
 
 HEADERS += \
-    mainwindow.h
+    mainwindow.h \
+    tablewindow.h \
+    tmessage.h
 
 FORMS += \
-    mainwindow.ui
+    mainwindow.ui \
+    tablewindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
